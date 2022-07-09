@@ -1,0 +1,71 @@
+/* ------ Table of content ------
+
+1. Webfonts
+   1.1 Manrope
+2. Custom property
+3. Global styles
+4. Typography
+5. Components
+   5.1 card
+
+------------------------------ */
+
+/* ===============
+   Webfonts
+   =============== */
+/* ---- Manrope ---- */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+/* ===============
+   Custom property
+   =============== */
+:root {
+	--Light-Cyan: hsl(193, 38%, 86%);
+	--Neon-Green: hsl(150, 100%, 66%);
+	--Grayish-Blue: hsl(217, 19%, 38%);
+	--Dark-Grayish-Blue: hsl(217, 19%, 24%);
+	--Dark-Blue: hsl(218, 23%, 16%);
+}
+
+/* ===============
+   Global styles
+   =============== */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:focus {
+	outline: none;
+}
+
+body {
+	display: grid;
+	height: 100vh;
+	place-items: center;
+	color: var(--Light-Cyan);
+	font-family: "Manrope", sans-serif;
+	line-height: 1.5;
+	margin: 0;
+	background-color: var(--Dark-Blue);
+}
+
+/* ===============
+   Typography
+   =============== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 800;
+	line-height: 1;
+	margin: 1rem 0;
+}
+
+/* ===============
+   Components
+   =============== */
+/* ---- card ---- */
